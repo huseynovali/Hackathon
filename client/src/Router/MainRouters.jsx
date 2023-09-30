@@ -5,7 +5,7 @@ import Login from "../pages/login/Login";
 import AuthRoutes from "./AuthRoutes";
 import PrivateRoutes from "./PrivateRoutes";
 import Appeals from "../components/AdminComp/Appeals/Appeals";
-
+import Owerviev from "../components/Overview/Overview"
 export default function MainRoutes() {
   const Routes = useRoutes([
     {
@@ -19,6 +19,10 @@ export default function MainRoutes() {
             {
               path:"appeals",
               element:<Appeals/>
+            },
+            {
+              path:'/owerviev',
+              element:<Owerviev/>
             }
           ]
         },

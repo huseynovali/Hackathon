@@ -25,6 +25,7 @@ function Header() {
       </div>
       <div className="admin__info">
        <h2 className="admin__info__text">Admin</h2>
+       <p className="admin__email__info">huseynovali@gmail.com</p>
       </div>
 
     </div>

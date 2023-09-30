@@ -33,3 +33,7 @@
 .flex-col{
   flex-direction: column;
 }
+
+.w-full{
+  width: 100%;
+}

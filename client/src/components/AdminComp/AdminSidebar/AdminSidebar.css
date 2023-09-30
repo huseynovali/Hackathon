@@ -3,6 +3,8 @@
   height: 100vh;
   background-color: #6750a4;
   padding: 24px 16px;
+  position: sticky;
+  top: 0;
 }
 
 .Admin__Sidebar__IconText {

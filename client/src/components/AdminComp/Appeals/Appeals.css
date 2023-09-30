@@ -4,8 +4,38 @@
   font-size: 34px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px; /* 52.941% */
+    padding: 34px 0;
+  display: block;
 }
-.appeals__container{
-    padding: 0 24px;
+.appeals__container {
+  padding: 0 24px;
+  padding-bottom: 34px;
+}
+
+.search__and__filter {
+  padding: 34px 0;
+}
+.search__and__filter input {
+  padding: 10px 12px;
+}
+
+.table__body {
+  overflow: scroll !important;
+  height: 500px !important;
+}
+.custom-table-header {
+  background-color: #f9f6ff;
+}
+.custom-table-text {
+  color: #6750a4 !important;
+}
+.see__detail__btn {
+  color: #777;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  border: none ;
+  background: none;
+  cursor: pointer;
 }
