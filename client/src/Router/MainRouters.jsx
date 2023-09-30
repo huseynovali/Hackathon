@@ -4,6 +4,7 @@ import AdminPage from "../pages/adminPage/AdminPage";
 import Login from "../pages/login/Login";
 import AuthRoutes from "./AuthRoutes";
 import PrivateRoutes from "./PrivateRoutes";
+import Appeals from "../components/AdminComp/Appeals/Appeals";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -12,8 +13,14 @@ export default function MainRoutes() {
       element: <PrivateRoutes />,
       children: [
         {
-          index:true,
+          path: "/",
           element: <AdminPage />,
+          children:[
+            {
+              path:"appeals",
+              element:<Appeals/>
+            }
+          ]
         },
       ],
     },
@@ -22,7 +29,7 @@ export default function MainRoutes() {
       element: <AuthRoutes />,
       children: [
         {
-            index:true,
+          index: true,
           element: <Login />,
         },
       ],

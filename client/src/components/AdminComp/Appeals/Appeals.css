@@ -1,0 +1,11 @@
+.appeals__header__word {
+  color: #000;
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 52.941% */
+}
+.appeals__container{
+    padding: 0 24px;
+}

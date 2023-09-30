@@ -13,8 +13,26 @@
   font-weight: 600;
   line-height: normal;
 }
-.Admin__Sidebar__list__item{
-    padding:12px 10px 
+.Admin__Sidebar__list {
+  padding: 100px 0;
+}
+.Admin__Sidebar__list__item {
+  padding: 12px 10px;
+
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.Admin__Sidebar__list__item a {
+  color: #fff;
+}
+.isactive-text {
+  color: #6750a4 !important;
+}
+.isactive {
+  background-color: #fff;
 }
 .Admin__Sidebar__list__item__text {
   font-family: "Inter", sans-serif;
@@ -22,4 +40,30 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-left: 12px;
+}
+.Admin__Sidebar__logout__text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 12px;
+}
+.logout__btn__content {
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.Admin__Sidebar__bottom {
+  min-height: 95%;
+}
+
+.logout__btn__content:hover {
+  background-color: #fff;
+  color: #6750a4;
 }

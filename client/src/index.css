@@ -5,5 +5,31 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
+.d-flex{
+  display: flex;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-end{
+  justify-content: end;
+}
+.items-center{
+ align-items: center;
+}
+
+.items-end{
+  align-items: end;
+}
+.flex-col{
+  flex-direction: column;
+}
