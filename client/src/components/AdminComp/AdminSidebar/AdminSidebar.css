@@ -1,0 +1,25 @@
+.Admin__Sidebar__Container {
+  width: 250px;
+  height: 100vh;
+  background-color: #6750a4;
+  padding: 24px 16px;
+}
+
+.Admin__Sidebar__IconText {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Admin__Sidebar__list__item{
+    padding:12px 10px 
+}
+.Admin__Sidebar__list__item__text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
