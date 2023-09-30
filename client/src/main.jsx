@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import userReducer from "./store/userSlice";
+import detailReducer from "./store/detailSlice";
+
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
@@ -11,6 +13,7 @@ import { Provider } from "react-redux";
 const store = configureStore({
   reducer: {
     userReducer: userReducer,
+    detailReducer:detailReducer,
   },
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
