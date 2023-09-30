@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Appeals.css";
@@ -8,6 +9,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { useDispatch, useSelector } from "react-redux";
+import { setShowTrue} from "../../../Store/detailSlice";
 
 function Appeals() {
   const [rows, setRows] = useState([]);
@@ -36,11 +39,21 @@ function Appeals() {
       (filterStatus === "" || row.status === filterStatus)
     );
   });
+  const dispatch = useDispatch();
+  const { show } = useSelector(state => state.detailSlice);
+  console.log(show)
 
+  const handleOpen = ()=>{
+    dispatch(setShowTrue())
+ }
+  
   return (
     <div className="appeals__container">
       <h1 className="appeals__header__word">Appeals</h1>
-
+    <>
+      <Button onClick={()=>handleOpen()}>show</Button>
+      {show ? <ShowDetail /> : <></>}
+      <>
       <div className="search__and__filter w-full d-flex justify-between items-center">
         <div className="input__group">
           <input
@@ -113,6 +126,7 @@ function Appeals() {
       </TableContainer>
     </div>
   );
+
 }
 
 export default Appeals;
