@@ -4,26 +4,25 @@ import AdminPage from "../pages/adminPage/AdminPage";
 import Login from "../pages/login/Login";
 
 export default function MainRoutes() {
-    const Routes = useRoutes([
+  const Routes = useRoutes([
+    {
+      element: <PrivateRoutes />,
+      children: [
         {
-            element: <PrivateRoutes />,
-            children: [
-                {
-                    path: "/",
-                    element: <AdminPage />,
-                },
-            ],
+          path: "/",
+          element: <AdminPage />,
         },
+      ],
+    },
+    {
+      element: <AuthRoutes />,
+      children: [
         {
-            element: <AuthRoutes />,
-            children: [
-                {
-                    path: "/login",
-                    element: <Login />,
-                },
-            ],
+          path: "/login",
+          element: <Login />,
         },
-    ]);
-
-    return Routes;
+      ],
+    },
+  ]);
+  return Routes;
 }
