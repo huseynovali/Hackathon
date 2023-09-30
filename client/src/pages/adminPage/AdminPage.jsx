@@ -1,8 +1,13 @@
 import React from 'react'
 import Button from '@mui/material/Button';
+import Index from '../../components/AdminComp/Index';
 function AdminPage() {
   return (
-    <div><Button variant="contained">Hello world</Button></div>
+    <div>
+   <Index/>
+
+      
+    </div>
   )
 }
 
