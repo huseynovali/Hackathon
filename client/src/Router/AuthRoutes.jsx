@@ -7,7 +7,7 @@ import { Navigate, Outlet } from "react-router";
 function AuthRoutes() {
   const [loading, setLoading] = useState(true);
 
-  const [isTrue, setIsTrue] = useState(true);
+  const [isTrue, setIsTrue] = useState(false);
   // const token = getCryptLocalSrtorage("token")
 
   useEffect(() => {
