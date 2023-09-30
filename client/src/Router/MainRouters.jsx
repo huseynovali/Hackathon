@@ -11,6 +11,7 @@ export default function MainRoutes() {
         {
           path: "/",
           element: <AdminPage />,
+          
         },
       ],
     },
