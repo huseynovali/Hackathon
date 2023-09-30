@@ -5,39 +5,35 @@ import { Navigate, Outlet } from "react-router";
 // import Loading from "../Pages/Loading/Loading";
 
 function AuthRoutes() {
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-    const [isTrue,setIsTrue] =useState(false) ;
-    // const token = getCryptLocalSrtorage("token") 
+  const [isTrue, setIsTrue] = useState(true);
+  // const token = getCryptLocalSrtorage("token")
 
-    useEffect(() => {
-        // console.log(token);
-        // axiosInstance.post("/user/api/token", {token})
-        //     .then(res => {
-        //         console.log(res.data);
-        //         if(res.data == true){
-        //             setIsTrue(true);
-        //             setLoading(false)
-              
-        //         }
-        //     })
-        //     .catch(err=>{
-        //         setIsTrue(false);
-        //         setLoading(false)
-         
-        //     })
-    }, [])
+  useEffect(() => {
+    // console.log(token);
+    // axiosInstance.post("/user/api/token", {token})
+    //     .then(res => {
+    //         console.log(res.data);
+    //         if(res.data == true){
+    //             setIsTrue(true);
+    //             setLoading(false)
+    //         }
+    //     })
+    //     .catch(err=>{
+    //         setIsTrue(false);
+    //         setLoading(false)
+    //     })
+  }, []);
 
-    if (loading) {
+  if (loading) {
+    // return <Loading/>;
+  }
 
-        // return <Loading/>;
-    }
-
-
-    if (isTrue) {
-        return <Navigate to="/profile/accound" />;
-    }
-    return <Outlet />;
+  if (isTrue) {
+    return <Navigate to="/" />;
+  }
+  return <Outlet />;
 }
 
 export default AuthRoutes;
